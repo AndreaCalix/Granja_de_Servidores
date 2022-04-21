@@ -1,0 +1,18 @@
+------ SERVIDOR FTP -------
+1. Ingresar a TextEditor desde una PC
+2. Crear o abrir los archivos
+3. Para compartirlos con otra pc
+Primero: revisar la lista de archivos desde la consola con dir
+Segundo: usar el comando ftp + ip del servidor ftp
+Tercero: se solicta el usuario al que quiere enviar el documento mas la contrasenia
+Cuarto: escribir que accion quiere hacer, subir,borrar,renombrar y colocar el nombre del archivo.txt
+
+-------COMANDOS--------
+put //para subir archivos
+rename // cambiar nombre 
+dir // para ver los archivos
+delete // para borrar
+
+**solo soporta archivos txt, html 
+** se puede subir, crear o abrir
+** las acciones que se pueden realizar depende de los privilegios del usuario
