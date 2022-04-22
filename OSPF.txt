@@ -1,0 +1,59 @@
+------ DATACENTER ----------
+router ospf 10
+network 192.168.5.0 0.0.0.255 area 0
+network 192.168.3.0 0.0.0.255 area 0
+network 192.168.6.0 0.0.0.255 area 0
+network 192.168.4.0 0.0.0.255 area 0
+network 192.168.7.0 0.0.0.255 area 0
+network 192.168.2.0 0.0.0.255 area 0
+network 10.0.0.0 0.0.0.3 area 0
+network 10.0.0.8 0.0.0.3 area 0
+network 10.0.0.4 0.0.0.3 area 0
+network 10.0.0.12 0.0.0.3 area 0
+network 10.0.0.16 0.0.0.3 area 0
+network 10.0.0.20 0.0.0.3 area 0
+
+------ R-ADMIN ----------
+router ospf 10
+network 192.168.5.0 0.0.0.255 area 0
+network 192.168.4.0 0.0.0.255 area 0
+network 192.168.7.0 0.0.0.255 area 0
+network 192.168.2.0 0.0.0.255 area 0
+network 192.168.3.0 0.0.0.255 area 0
+network 192.168.6.0 0.0.0.255 area 0
+network 10.0.0.0 0.0.0.3 area 0
+network 10.0.0.8 0.0.0.3 area 0
+network 10.0.0.4 0.0.0.3 area 0
+network 10.0.0.12 0.0.0.3 area 0
+network 10.0.0.16 0.0.0.3 area 0
+network 10.0.0.20 0.0.0.3 area 0
+
+---------- R-SISTEMAS -------------
+router ospf 10
+network 192.168.3.0 0.0.0.255 area 0
+network 192.168.6.0 0.0.0.255 area 0
+network 192.168.5.0 0.0.0.255 area 0
+network 192.168.7.0 0.0.0.255 area 0
+network 192.168.2.0 0.0.0.255 area 0
+network 192.168.4.0 0.0.0.255 area 0
+network 10.0.0.0 0.0.0.3 area 0
+network 10.0.0.8 0.0.0.3 area 0
+network 10.0.0.4 0.0.0.3 area 0
+network 10.0.0.12 0.0.0.3 area 0
+network 10.0.0.16 0.0.0.3 area 0
+network 10.0.0.20 0.0.0.3 area 0
+
+----------- R-VENTAS ---------------
+router ospf 10
+network 192.168.3.0 0.0.0.255 area 0
+network 192.168.6.0 0.0.0.255 area 0
+network 192.168.4.0 0.0.0.255 area 0
+network 192.168.5.0 0.0.0.255 area 0
+network 192.168.7.0 0.0.0.255 area 0
+network 192.168.2.0 0.0.0.255 area 0
+network 10.0.0.0 0.0.0.3 area 0
+network 10.0.0.8 0.0.0.3 area 0
+network 10.0.0.4 0.0.0.3 area 0
+network 10.0.0.12 0.0.0.3 area 0
+network 10.0.0.16 0.0.0.3 area 0
+network 10.0.0.20 0.0.0.3 area 0
