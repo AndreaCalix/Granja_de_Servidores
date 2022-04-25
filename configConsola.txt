@@ -1,0 +1,18 @@
+
+banner motd #SOLO ACCESO AUTORIZADO#
+
+---------------  password de consola ---------------
+enable secret redes2
+line console 0
+password redes2
+login
+service password-encryption
+
+----------- password acceso remoto por telnet -------
+line vty 0 4
+password redes2
+login
+
+------- usuarios administradores  ---------
+username administrador secret admin123
+username mantenimiento secret admin123
