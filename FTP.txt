@@ -1,0 +1,15 @@
+---------- Detalles sobre el servidor FTP ----------
+
+Este protocolo es utilizado para subir y descargar archivos, esta comunicación se da entre un cliente  y un servidor
+Para conectarnos con el servidor colocamos el siguiente comando
+
+ftp <ip del servidor>
+nos solicita usuario y contraseña
+
+------ Algunos comandos que podemos utilizar: ------
+
+1. help, muestra todos los comandos adminitidos por ftp
+2. ls, crea una lista de los archivos que se encuentran en el directorio 
+3. pwd, muestra el nombre del directorio actual
+4. get, recupera un archivo que se encuentra en el servidor
+5. put,este comando se utiliza para enviar un archivo

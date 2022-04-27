@@ -1,0 +1,23 @@
+----- Servidor ntp ------
+ NTP viene de «Network Time Protocol«.
+Podríamos considerarlo como un sistema que es usado para lograr un sincronismo de la hora a través de redes de comunicaciones.
+-- se habilita la autenticacion para reforzar la confiabilidad, se define un numero de llave y una contraseña
+ 
+## routers ##
+ntp authentication-key 1 md5 Admin123
+ntp trusted-key 1
+ntp update-calendar
+ntp server 192.168.5.7 key 1
+
+EXTRA: el comando show ntp associations
+muestra si el cliente esta asociado a algun servidor
+el comando show ntp status muestra que la hora del reloj esta sincronizada
+stratum muestra la confianza y la distancia que hay desde el servicio hasta el cliente
+
+---- servidor syslog ------
+Syslog es el acrónimo de System Logging Protocol, que significa protocolo de registro del sistema. Se trata de un protocolo estándar utilizado para enviar mensajes de registro o eventos del sistema a un servidor específico, llamado servidor de syslog. El syslog se utiliza principalmente para recopilar varios registros de dispositivos de diversas máquinas diferentes en una ubicación central para la supervisión y su análisis.
+
+## routers & switches ##
+logging host 192.168.5.8
+service timestamps log datetime msec
+
